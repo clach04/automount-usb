@@ -86,7 +86,7 @@ do_unmount()
         ${log} "Warning: ${DEVICE} is not mounted"
     else
         umount -l ${DEVICE}
-	${log} "Unmounted ${DEVICE} from ${MOUNT_POINT}"
+        ${log} "Unmounted ${DEVICE} from ${MOUNT_POINT}"
         /bin/rmdir "${MOUNT_POINT}"
         sed -i.bak "\@${MOUNT_POINT}@d" /var/log/usb-mount.track
     fi
