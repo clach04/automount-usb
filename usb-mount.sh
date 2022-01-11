@@ -90,8 +90,6 @@ do_unmount()
         /bin/rmdir "${MOUNT_POINT}"
         sed -i.bak "\@${MOUNT_POINT}@d" /var/log/usb-mount.track
     fi
-
-
 }
 
 case "${ACTION}" in
@@ -105,3 +103,4 @@ case "${ACTION}" in
         usage
         ;;
 esac
+
