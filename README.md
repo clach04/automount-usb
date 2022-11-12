@@ -2,7 +2,7 @@
 
 This is a dirty solution; but works.
 
-Based on https://github.com/raamsri/automount-usb
+Based on https://github.com/raamsri/automount-usb (you may also be interested in https://github.com/Ferk/udev-media-automount which saw some bug fixes in 2022)
 
 On inserting an USB drive, automounts the drive at /media/ as a
 directory named by device label; just the device name if label is
