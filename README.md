@@ -26,6 +26,10 @@ not recommended for enclosures with longer TTL.
   * udev
   * systemd
 
+Debian based disributions (like Armbian) typically have all requirements already installed with the exception of ntfs-3g file system support/
+
+    sudo apt-get install ntfs-3g
+
 ## Install
 
 
