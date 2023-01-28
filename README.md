@@ -1,12 +1,13 @@
 ### Automount USB drives with systemd
 
-This is a dirty solution; but works.
-
 Based on https://github.com/raamsri/automount-usb (you may also be interested in https://github.com/Ferk/udev-media-automount which saw some bug fixes in 2022)
 
 On inserting an USB drive, automounts the drive at /media/ as a
 directory named by device label; just the device name if label is
 empty: /media/usbtest, /media/sdd
+
+Can also call usb-mount.sh manually without the automatic udev/systemd rules.
+Logs to stderr and system log (see logger notes below).
 
 Tracks the list of mounted drives in `/var/log/usb-mount.track`
 
