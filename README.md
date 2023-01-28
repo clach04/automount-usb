@@ -8,7 +8,7 @@ On inserting an USB drive, automounts the drive at /media/ as a
 directory named by device label; just the device name if label is
 empty: /media/usbtest, /media/sdd
 
-Tracks the list of mounted drives in /var/log/usb-mount.track
+Tracks the list of mounted drives in `/var/log/usb-mount.track`
 
 When device is unplugged (without umount), script will auto-unmount and remove the mount point directory under /media
 
