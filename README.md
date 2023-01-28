@@ -1,4 +1,11 @@
-### Automount USB drives with systemd
+# Automount USB drives with systemd
+
+  * [Overview](#overview)
+  * [Requirements](#requirements)
+  * [Install](#install)
+  * [Uninstall / removal](#uninstall---removal)
+
+## Overview
 
 Based on https://github.com/raamsri/automount-usb (you may also be interested in https://github.com/Ferk/udev-media-automount which saw some bug fixes in 2022)
 
