@@ -30,13 +30,13 @@ not recommended for enclosures with longer TTL.
 
   * bash (dash might work, but currently expects bash to be installed)
   * logger
-  * any file system driver/tools (e.g. ntfs-3g)
+  * any file system driver/tools (e.g. ntfs-3g, exFAT, etc.)
   * udev
   * systemd
 
 Debian based distributions (like Armbian) typically have all requirements already installed with the exception of ntfs-3g file system support/
 
-    sudo apt-get install ntfs-3g
+    sudo apt-get install ntfs-3g exfat-fuse exfat-utils
 
 ## Install
 
