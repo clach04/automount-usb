@@ -20,7 +20,7 @@ Tracks the list of mounted drives in `/var/log/usb-mount.track`
 
 When device is unplugged (without umount), script will auto-unmount and remove the mount point directory under /media
 
-Uses `logger` to log the actions in /var/log/messages (`/var/log/syslog`) with tag 'usb-mount.sh'
+Uses `logger` to log the actions in /var/log/messages (`/var/log/syslog`, if using logrotate check `/etc/logrotate.conf`, likely logs moved to `/var/log.hdd/`) with tag 'usb-mount.sh'
 
 Please do not expect it to perfectly handle all your needs.
 Be warned, minimally tested; okay for temporary plug-ins but certainly
