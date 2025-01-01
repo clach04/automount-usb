@@ -47,6 +47,11 @@ To setup, run `CONFIGURE.sh` with sudo or as root:
 
 This will update/add (or create if not already present) `/etc/udev/rules.d/99-local.rules`
 
+## Quick sanity checks
+
+    sudo systemctl status|rg -i usb-mount
+    sudo cat /var/log/syslog | rg -i usb-mount
+
 ## Uninstall / removal
 
 `REMOVE.sh` to undo the setup:
